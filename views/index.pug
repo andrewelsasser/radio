@@ -1,0 +1,24 @@
+script(src='/javascripts/calculate.js')
+div(style="float:left;width:100%;")
+
+    h3() Length of a center fed, half-wave wire dipole or inverted vee antenna by frequency
+    h4 Enter Frequency in MHz
+    input(type='text' id='name' value=name)
+    button(type='button' id='submit' onclick="calculate();") Submit
+    br
+    br
+    div(style="float:left;width:100%;")
+    
+        span(id="wavelengthInFeet")
+        br
+        br
+        span(id="halfWavelengthInInches")
+        br
+        br
+
+
+    div(style="text-align: center; display: inline-block;")
+        img(src='/images/antenna_diagram600.jpg', alt='Half Wave Dipole Antenna')
+    div(style="text-align: center;")
+
+    a(href='/decibels') Go to Users Page
